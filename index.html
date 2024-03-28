@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <title>Responsive login form</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="login">
-        <div class="login__content">
-          <img class="login__img" src="./assets/img/bg-login.png" alt="Login image" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 
-          <form class="login__form">
-            <div>
-              <h1 class="login__title">
+  <title>Responsive login form</title>
+</head>
+
+<body style="background-image: url('./assets/img/background.png');background-repeat: no-repeat;background-size: cover;">
+  <div class="container">
+    <div class="login">
+      <div class="login__content">
+        <!-- <img class="login__img" src="./assets/img/bg-login.png" alt="Login image" /> -->
+
+        <form class="login__form">
+          <div>
+            <!-- <h1 class="login__title">
                 <span>Welcome</span> Back
-              </h1>
+              </h1> -->
 
-              <p class="login__description">
-                Welcome! Please login to continue.
-              </p>
-            </div>
+            <p class="login__description">
+              Welcome! Please login to continue.
+            </p>
+          </div>
 
-            <div>
-              <div class="login__inputs">
-                <div>
-                  <label for="email" class="login__label">Email</label>
-                  <input class="login__input" type="email" id="email" placeholder="Enter your email address" required />
-                </div>
-
-                <div>
-                  <label for="password" class="login__label">Password</label>
-                  <div class="login__box">
-                    <input class="login__input" type="password" id="password" placeholder="Enter your password" required />
-                    <i class="ri-eye-off-line login__eye" id="input-icon"></i>
-                  </div>
-                </div>
+          <div>
+            <div class="login__inputs">
+              <div>
+                <label for="email" class="login__label">Enter your E-mail</label>
+                <input class="login__input" type="email" id="email" placeholder="Enter your email address" required />
               </div>
 
-              <div class="login__check">
-                <label class="login__check-label" for="check">
+              <div>
+                <label for="password" class="login__label">Enter your password</label>
+                <div class="login__box">
+                  <input class="login__input" type="password" id="password" placeholder="Enter your password"
+                    required />
+                  <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="login__check">
+              <!-- <label class="login__check-label" for="check">
                   <input class="login__check-input" type="checkbox" id="check" />
                   <i class="ri-check-line login__check-icon"></i>
                   Remember me
-                </label>
+                </label> -->
+              <a class="login__forgot" href="#" style="float: right;font-family: Montserrat;
+              font-size: 17px;
+              font-weight: 400;
+              line-height: 25.81px;
+              letter-spacing: 0.05em;
+              text-align: left;
+              ">forgot password?</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="login__buttons">
+              <button class="login__button">Log In</button>
+              <!-- <button class="login__button login__button-ghost">Sign Up</button> -->
+            </div>
+            <div style="text-align: center;">
+              <div>Don’t have an account?</div>
+              <a class="login__forgot" href="#">Create account</a>
+              <div style="margin-top: 20px;margin-bottom: 20px;">or</div>
+              <div style="display: inline-block;">
+                <img style="padding: 20px;" src="./assets/img/google.png" />
+                <img style="padding: 20px;" src="./assets/img/apple.png" />
+                <img style="padding: 20px;" src="./assets/img/facebook.png" />
               </div>
             </div>
-
-            <div>
-              <div class="login__buttons">
-                <button class="login__button">Log In</button>
-                <button class="login__button login__button-ghost">Sign Up</button>
-              </div>
-
-              <a class="login__forgot" href="#">Forgot Password?</a>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
 
   <!--=============== MAIN JS ===============-->
   <script src="./assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>

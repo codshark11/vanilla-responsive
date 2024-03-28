@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -85,8 +86,8 @@ img {
 
 .login__form {
   position: relative;
-  background-color: hsla(244, 16%, 92%, 0.6);
-  border: 2px solid hsla(244, 16%, 92%, 0.75);
+  /* background-color: hsla(244, 16%, 92%, 0.6); */
+  /* border: 2px solid hsla(244, 16%, 92%, 0.75); */
   margin-inline: 1.5rem;
   row-gap: 1.25rem;
   backdrop-filter: blur(20px);
@@ -108,25 +109,31 @@ img {
   font-size: var(--small-font-size);
 }
 
+
 .login__inputs {
   row-gap: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
 .login__label {
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.81px;
+  letter-spacing: 0.05em;
   display: block;
   color: var(--title-color);
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
+  /* font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold); */
   margin-bottom: 0.25rem;
 }
 
 .login__input {
   width: 100%;
   padding: 14px 12px;
-  border-radius: 6px;
-  border: 2px solid var(--text-color);
-  background-color: hsla(244, 16%, 92%, 0.6);
+  border-radius: 15px;
+  border: 1px solid #D1D1D1;
+  /* background-color: hsla(244, 16%, 92%, 0.6); */
   color: var(--title-color);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
@@ -139,7 +146,7 @@ img {
 
 .login__input:focus,
 .login__input:valid {
-  border: 2px solid var(--first-color);
+  border: 1px solid #D1D1D1;
 }
 
 .login__box {
@@ -191,7 +198,7 @@ img {
   background: var(--first-color);
 }
 
-.login__check-input:checked + .login__check-icon {
+.login__check-input:checked+.login__check-icon {
   display: block;
   color: #fff;
 }
@@ -204,12 +211,18 @@ img {
 .login__button {
   width: 100%;
   padding: 14px 2rem;
-  border-radius: 6px;
-  background: linear-gradient(180deg, var(--first-color), var(--second-color));
+  border-radius: 15px;
+  background: #151515;
   color: #fff;
+  font-family: 'Montserrat';
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 16.43px;
+  text-align: center;
+
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+  /* box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5); */
   margin-bottom: 1rem;
 }
 
@@ -223,7 +236,7 @@ img {
 .login__forgot {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--first-color);
+  color: #2A2A2A;
   text-decoration: none;
 }
 
@@ -276,7 +289,7 @@ img {
     row-gap: 2rem;
     padding: 3rem;
     border-radius: 1.25rem;
-    border: 2px solid hsla(244, 16%, 92%, 0.75);
+    /* border: 2px solid hsla(244, 16%, 92%, 0.75); */
   }
 
   .login__description,
@@ -291,14 +304,14 @@ img {
   }
 
   .login__input {
-    border: 2.5px solid var(--text-color);
+    border: 1px solid #D1D1D1;
     padding: 1rem;
     font-size: var(--small-font-size);
   }
 
   .login__input:focus,
   .login__input:valid {
-    border: 2.5px solid var(--first-color);
+    border: 1px solid #D1D1D1;
   }
 
   .login__button {
