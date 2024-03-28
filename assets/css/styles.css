@@ -327,3 +327,122 @@ img {
     border: 2.5px solid var(--first-color);
   }
 }
+
+/*=============== Home, Lessons, Present Simple ===============*/
+
+body {
+  font-family: 'Montserrat';
+}
+
+.g-container:after, .g-container:before, .g-row:after, .g-row:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.g-background {
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.g-container {
+  padding: 8px;
+}
+
+.g-display-container {
+  position: relative;
+  padding: 8px;
+}
+
+.g-display-content {
+  position: absolute;
+}
+
+.g-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+}
+
+.g-half {
+  float: left;
+  width: 100%;
+}
+
+.g-half {
+  width: 50%;
+}
+
+.g-left {
+  float: left;
+}
+
+.g-right {
+  float: right;
+}
+
+.g-text-white {
+  color: #fff;
+}
+
+.g-text-black {
+  color: #000;
+}
+
+.g-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.g-panel-level {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.g-panel-phrase {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* .g-panel-title {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.g-panel-level {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.g-panel-phrase {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: 1px;
+} */
+
