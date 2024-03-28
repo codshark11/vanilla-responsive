@@ -42,7 +42,7 @@
 }
 
 body {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   font-family: var(--body-font);
   color: var(--text-color);
 }
@@ -86,11 +86,9 @@ img {
 
 .login__form {
   position: relative;
-  /* background-color: hsla(244, 16%, 92%, 0.6); */
-  /* border: 2px solid hsla(244, 16%, 92%, 0.75); */
   margin-inline: 1.5rem;
   row-gap: 1.25rem;
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -123,8 +121,6 @@ img {
   letter-spacing: 0.05em;
   display: block;
   color: var(--title-color);
-  /* font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold); */
   margin-bottom: 0.25rem;
 }
 
@@ -137,10 +133,7 @@ img {
   padding: 14px 12px;
   border-radius: 15px;
   border: 1px solid #D1D1D1;
-  /* background-color: hsla(244, 16%, 92%, 0.6); */
   color: var(--title-color);
-  /* font-size: var(--smaller-font-size);
-  font-weight: var(--font-medium); */
   transition: border 0.4s;
 }
 
@@ -212,6 +205,48 @@ img {
   column-gap: 0.75rem;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icon_back {
+  display: flex;
+  align-items: center;
+}
+
+.login__body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login_title_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem
+}
+
+.login__title_header {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  justify-self: center;
+  position: relative;
+}
+
+.login__forgot_text {
+  float: right;
+  font-family: Montserrat;
+  line-height: 25.81px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
 .login__button {
   width: 100%;
   padding: 14px 2rem;
@@ -223,11 +258,24 @@ img {
   font-weight: 400;
   line-height: 16.43px;
   text-align: center;
-
-  /* font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold); */
-  /* box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5); */
   margin-bottom: 1rem;
+}
+
+.login__or_text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.login__img_padding {
+  padding: 20px;
+}
+
+
+
+.login__blog {
+  text-align: center;
 }
 
 .login__button-ghost {
@@ -282,6 +330,7 @@ img {
     justify-self: center;
     /* margin-right: 4.5rem; */
   }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -293,8 +342,8 @@ img {
     row-gap: 2rem;
     padding: 3rem;
     border-radius: 1.25rem;
-    /* border: 2px solid hsla(244, 16%, 92%, 0.75); */
   }
+
 
   .login__description,
   .login__label,
