@@ -1,7 +1,7 @@
 /*=============== SHOW HIDDEN - PASSWORD ===============*/
 const showHiddenPassword = (inputPassword, inputIcon) => {
   const input = document.getElementById(inputPassword),
-        iconEye = document.getElementById(inputIcon)
+    iconEye = document.getElementById(inputIcon)
 
   iconEye.addEventListener('click', () => {
     // Change password to text
@@ -29,12 +29,14 @@ const showHiddenPassword = (inputPassword, inputIcon) => {
 
 // showHiddenPassword('password', 'input-icon')
 
-const clickPanel = () => {
-  const panel = document.getElementsByClassName('g-panel-parent');
+/*=============== SUBMIT LOGIN ===============*/
 
-  panel.addEventListener('click', () => {
-    window.location.href('./Level.html');
-  })
-}
+document.getElementById('login_form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission
 
-clickPanel();
+  // Get the value of the email input field
+  var email = document.querySelector('input[name="email"]').value;
+
+  // Redirect to another HTML page
+  window.location.href = 'Home.html?email=' + encodeURIComponent(email);
+});
