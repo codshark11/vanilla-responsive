@@ -412,7 +412,9 @@ body {
 .g-container:after,
 .g-container:before,
 .g-row:after,
-.g-row:before {
+.g-row:before, 
+.g-display-container:after,
+.g-display-container:before {
   content: "";
   display: table;
   clear: both;
@@ -458,7 +460,7 @@ body {
 .g-content {
   margin-left: auto;
   margin-right: auto;
-  max-width: 520px;
+  /* max-width: 520px; */
 }
 
 .g-half {
@@ -520,13 +522,31 @@ body {
 }
 
 .g-panel {
-  background-image: url('../img/blue_back.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem;
   height: 140px;
   background-size: 100% 100%;
-  margin: 16px 8px;
+}
+
+.g-panel-blue {
+  background-image: url('../img/blue_back.png');
+}
+
+.g-panel-red {
+  background-image: url('../img/red_back.png');
+}
+
+.g-panel-purple {
+  background-image: url('../img/purple_back.png');
+}
+
+.g-panel-orange {
+  background-image: url('../img/orange_back.png');
+}
+
+.g-panel-green {
+  background-image: url('../img/green_back.png');
 }
 
 .g-panel-item {
@@ -561,11 +581,14 @@ body {
 }
 
 .g-button-train {
+  display: table-caption;
   background-color: #10c62d;
   font-size: 24px;
   font-weight: bold;
-  padding: 16px 0;
   border-radius: 16px;
+  text-decoration: none;
+  padding: 20px 160px;
+  text-align: center;
 }
 
 #prog-bar-cont {

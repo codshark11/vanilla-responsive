@@ -27,4 +27,14 @@ const showHiddenPassword = (inputPassword, inputIcon) => {
   })
 }
 
-showHiddenPassword('password', 'input-icon')
+// showHiddenPassword('password', 'input-icon')
+
+const clickPanel = () => {
+  const panel = document.getElementsByClassName('g-panel-parent');
+
+  panel.addEventListener('click', () => {
+    window.location.href('./Level.html');
+  })
+}
+
+clickPanel();
