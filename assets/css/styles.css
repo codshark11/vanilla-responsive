@@ -292,6 +292,33 @@ img {
   text-decoration: none;
 }
 
+/*=============== Settings ===============*/
+.settings_container {
+  text-align: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 500px;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.settings_item_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.settings_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {
@@ -317,7 +344,6 @@ img {
   }
 
   .login__content {
-    width: 1024px;
     height: 600px;
   }
 
@@ -383,7 +409,10 @@ body {
   font-family: 'Montserrat';
 }
 
-.g-container:after, .g-container:before, .g-row:after, .g-row:before {
+.g-container:after,
+.g-container:before,
+.g-row:after,
+.g-row:before {
   content: "";
   display: table;
   clear: both;
@@ -491,11 +520,11 @@ body {
 }
 
 .g-panel {
-  background-image: url('../img/blue_back.png'); 
+  background-image: url('../img/blue_back.png');
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   border-radius: 1rem;
-  height: 140px; 
+  height: 140px;
   background-size: 100% 100%;
   margin: 16px 8px;
 }
@@ -532,7 +561,7 @@ body {
 }
 
 .g-button-train {
-  background-color: #10c62d; 
+  background-color: #10c62d;
   font-size: 24px;
   font-weight: bold;
   padding: 16px 0;
@@ -553,11 +582,12 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 #prog-bar-cont #prog-bar #background {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   /*Actual Stuff*/
   background: linear-gradient(-90deg, violet, #30b3fc, #70dc23, yellow, orange, #ff1076);
   -webkit-clip-path: inset(0 100% 0 0);
